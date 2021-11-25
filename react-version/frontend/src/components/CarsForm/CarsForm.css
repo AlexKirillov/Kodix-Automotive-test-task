@@ -1,0 +1,351 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    width: 1920px;
+    background: #282D30;
+}
+
+.captain-img {
+    margin-top: 3px;
+    height: 104px;
+    width: 494px;
+    top: 3px;  
+    background-image: url('./img/DUCK.png'); 
+    background-repeat: no-repeat; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    margin-top: 55px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.input-block {
+    display: flex;
+    justify-content: center;
+}
+
+.therd-string {
+    margin-top: 30px;
+}
+
+.cars-input-name,
+.cars-input-year,
+.cars-input-price,
+.select-input{
+    height: 40px;
+    width: 306px;
+    padding-left: 10px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.cars-input-description {
+    height: 40px;
+    width: 988px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.cars-button {
+    height: 44px;
+    width: 306px;
+    border-radius: 4px;
+    background: #C3002F;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+.select-input {
+    margin-top: 12px;
+    color: #8B8B8B;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+.color-container {
+    margin-right: 145px;
+    font-family: 'Roboto', sans-serif;
+    color: #8B8B8B;
+ }
+
+ .color-block {
+    display: flex;
+}
+
+#happy1,
+#happy2,
+#happy3,
+#happy4,
+#happy5 {
+    display: none;
+    z-index: -1;
+    opacity: 0;
+}
+
+#happy1+label,
+#happy2+label,
+#happy3+label,
+#happy4+label,
+#happy5+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 24px;
+  }
+  #happy1+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+  }
+
+  #happy2+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+
+  #happy3+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+  }
+
+  #happy4+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-color: #DD1C10;
+  }
+
+  #happy5+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    background-color: #77CF61;
+  }
+
+  #happy1:not(:disabled):not(:checked)+label:hover::before,
+  #happy2:not(:disabled):not(:checked)+label:hover::before,
+  #happy3:not(:disabled):not(:checked)+label:hover::before,
+  #happy4:not(:disabled):not(:checked)+label:hover::before,
+  #happy5:not(:disabled):not(:checked)+label:hover::before {
+    border: 2px solid rgb(0, 119, 255);
+  }
+
+  #happy1:checked+label::before,
+  #happy2:checked+label::before,
+  #happy3:checked+label::before,
+  #happy4:checked+label::before,
+  #happy5:checked+label::before {
+    border: 3px solid red;
+  }
+
+  .color-hap {
+    height: 19px;
+    width: 19px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 720px) {
+    .header {
+        width: 768px;
+    }
+
+    .cars-input-description {
+        width: 730px;
+    }
+
+    .test {
+        width: 730px;
+    }
+    
+    .color-container {
+        margin-right: 30px;
+     }
+    
+     .select-input {
+        width: 220px;
+    }
+
+    .cars-list-heading-container {
+        margin-top: 76px;
+    }
+
+    .vertical-line {
+        margin-right: 12px;
+        margin-top: 25px;
+    }
+
+    .test2 {
+        width: 730px;
+    }
+
+    .table-headers {
+        width: 730px;
+    }
+
+    .year-cell {
+        left: 350px;
+    }
+    
+    .color-cell {
+        left: 420px;
+    }
+    
+    .status-cell {
+        left: 470px;
+    }
+    
+    .price-cell {
+        left: 570px;
+    }
+
+    .delete {
+        left: 650px;
+    }
+   }
+
+   @media only screen and (max-width: 375px) and (min-width: 360px) {
+    .header {
+        width: 375px;
+    }
+
+    .captain-img { 
+        height: 63px;
+        width: 300px;
+        background-image: url('./img/DUCK_1.png');  
+        background-repeat: no-repeat;
+    }
+
+    .heading {
+        margin-top: 30px;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    .input-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cars-input-year, .cars-input-price {
+        width: 145px;
+    }
+
+    .cars-input-name {
+        width: 325px;
+    }
+
+    .cars-input-description {
+        width: 325px;
+    }
+
+    .test {
+        display: flex;
+        flex-wrap: wrap;
+        width: 325px;
+    }
+
+    .color-container {
+        margin-right: 130px;
+        margin-bottom: 30px;
+    }
+
+    .select-input {
+        width: 155px;
+    }
+
+    .cars-button {
+        width: 130px;
+    }
+
+    .cars-list-heading-container {
+        margin-top: 60px;
+    }
+
+    .test2 {
+        width: 345px;
+    }
+
+    .table-headers {
+        display: none;
+    }
+
+    .name-cell {
+        width: 230px;
+    }
+
+    .year-cell {
+        top: 100px;
+        left: 15px;
+    }
+    
+    .color-cell {
+        left: 250px;
+    }
+    
+    .status-cell {
+        top: 100px;
+        left: 70px;
+    }
+    
+    .price-cell {
+        left: 280px;
+    }
+
+    .delete {
+        top: 90px;
+        left: 260px;
+    }
+
+    .list-content {
+        flex-wrap: nowrap;
+        height: 130px;
+    }
+   }

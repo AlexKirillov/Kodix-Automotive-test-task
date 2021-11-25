@@ -1,0 +1,227 @@
+.list-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 76px;
+    background: #F5F6F6;
+    border-bottom: 1px solid gray;
+    padding-left: 10px;
+}
+
+.name-cell {
+    position: absolute;
+    left: 15px;
+}
+
+.year-cell {
+    position: absolute;
+    left: 580px;
+}
+
+.color-cell {
+    position: absolute;
+    left: 650px;
+}
+
+.status-cell {
+    position: absolute;
+    left: 700px;
+}
+
+.price-cell {
+    position: absolute;
+    left: 800px;
+}
+
+.top {
+    top: 20px;
+}
+
+.top2 {
+    top: 15px;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    left: 880px;
+    height: 29px;
+    width: 85px;
+    color: #8B8B8B;
+}
+
+.delete:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+    width: 85px;
+    border-radius: 20px;
+    background: #282D30;
+    color: #FFFFFF;
+}
+
+.color-hap {
+    height: 19px;
+    width: 19px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 720px) {
+    .header {
+        width: 768px;
+    }
+
+    .cars-input-description {
+        width: 730px;
+    }
+
+    .test {
+        width: 730px;
+    }
+    
+    .color-container {
+        margin-right: 30px;
+     }
+    
+     .select-input {
+        width: 220px;
+    }
+
+    .cars-list-heading-container {
+        margin-top: 76px;
+    }
+
+    .vertical-line {
+        margin-right: 12px;
+        margin-top: 25px;
+    }
+
+    .test2 {
+        width: 730px;
+    }
+
+    .table-headers {
+        width: 730px;
+    }
+
+    .year-cell {
+        left: 350px;
+    }
+    
+    .color-cell {
+        left: 420px;
+    }
+    
+    .status-cell {
+        left: 470px;
+    }
+    
+    .price-cell {
+        left: 570px;
+    }
+
+    .delete {
+        left: 650px;
+    }
+   }
+
+   @media only screen and (max-width: 375px) and (min-width: 360px) {
+    .header {
+        width: 375px;
+    }
+
+    .heading {
+        margin-top: 30px;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    .input-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cars-input-year, .cars-input-price {
+        width: 145px;
+    }
+
+    .cars-input-name {
+        width: 325px;
+    }
+
+    .cars-input-description {
+        width: 325px;
+    }
+
+    .test {
+        display: flex;
+        flex-wrap: wrap;
+        width: 325px;
+    }
+
+    .color-container {
+        margin-right: 130px;
+        margin-bottom: 30px;
+    }
+
+    .select-input {
+        width: 155px;
+    }
+
+    .cars-button {
+        width: 130px;
+    }
+
+    .cars-list-heading-container {
+        margin-top: 60px;
+    }
+
+    .test2 {
+        width: 345px;
+    }
+
+    .table-headers {
+        display: none;
+    }
+
+    .name-cell {
+        width: 230px;
+    }
+
+    .year-cell {
+        top: 100px;
+        left: 15px;
+    }
+    
+    .color-cell {
+        left: 250px;
+    }
+    
+    .status-cell {
+        top: 100px;
+        left: 70px;
+    }
+    
+    .price-cell {
+        left: 280px;
+    }
+
+    .delete {
+        top: 90px;
+        left: 260px;
+    }
+
+    .list-content {
+        flex-wrap: nowrap;
+        height: 130px;
+    }
+   }

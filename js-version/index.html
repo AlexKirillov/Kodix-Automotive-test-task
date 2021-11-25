@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap" rel="stylesheet">
+    <script defer src="./app.js"></script>
+    <title>DUCK</title>
+</head>
+<body>
+    <header class="header">
+        <div class="captain-img"></div>
+    </header>
+    <main>
+        <div class="heading">¡Ay caramba!</div>
+        <form class="cars-form">
+            <div class="input-block">
+                <input class="cars-input-name" type="text" placeholder="Название">
+                <input class="cars-input-year" type="text" placeholder="Год">
+                <input class="cars-input-price" type="text" placeholder="Цена">
+            </div>
+            <div class="input-block">
+                <input class="cars-input-description" type="text" placeholder="Описание">
+            </div>
+            <div class="input-block therd-string">
+                <div class="test">
+                    <div class="color-container">
+                        <p>Цвет</p>
+                        <div class="color-block">
+                            <input  id="happy1" class="custom-radio" name="happy" value="white" type="radio">
+                            <label for="happy1"></label>
+                            <input  id="happy2" class="custom-radio" name="happy" value="black" type="radio">
+                            <label for="happy2"></label>
+                            <input  id="happy3" class="custom-radio" name="happy" value="gray" type="radio">
+                            <label for="happy3"></label>
+                            <input  id="happy4" class="custom-radio" name="happy" value="red" type="radio">
+                            <label for="happy4"></label>
+                            <input  id="happy5" class="custom-radio" name="happy" value="green" type="radio">
+                            <label for="happy5"></label>
+                        </div>
+                    </div>
+                    <label>
+                        <select class="select-input" name="select">
+                            <option value="in_stock">В наличии</option>
+                            <option value="pednding">Ожидается</option>
+                            <option value="out_of_stock">Нет в наличии</option>
+                        </select>
+                    </label>      
+                <button class="cars-button" type="submit">ОТПРАВИТЬ ></button>
+            </div>
+            </div>
+        </form>
+        <div class="cars-list-heading-container">
+            <div class="test2">
+                <div class="line-heading">
+                    <div class="vertical-line"></div>
+                    <div class="cars-list-heading">
+                        <h2>АВТОМОБИЛИ В НАЛИЧИИ</h2>
+                    </div>
+                </div>
+                <div class="table-headers">
+                    <p class="name-cell">Название</p>
+                    <p class="year-cell">Год</p>
+                    <p class="color-cell">Цвет</p>
+                    <p class="status-cell">Статус</p>
+                    <p class="price-cell">Цена</p>
+                </div>
+                <div class="list">
+                    <ul class="posts"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
